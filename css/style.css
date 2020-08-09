@@ -1,0 +1,356 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;   
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* ------- HEADER ------- */
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.flex-container{
+    background: #595959;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 50px;
+}
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    padding: 17.5px;
+    color: #111E6C;
+    font-size: 15px;
+}
+
+.menu-nav a:hover{
+    color: #2039CC;
+    border-bottom: ridge #2039CC;
+    padding-bottom: 20px;
+   
+}
+
+/**----CAPA----**/
+.capa{
+    background-image: url(../img/planeta2.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    
+    color: #111E6C;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.capa h1{
+    text-align: center;
+    max-width: 500px;
+    font-size: 70px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px #192DA1;
+    border-bottom: 3px solid #2039CC;
+    ;
+}
+
+.capa h2{
+    max-width: 500px;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+
+}
+
+.capa .botao{
+    border: 1px solid #111E6C;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #111E6C;
+}
+
+.capa .botao:hover{
+    background-color: #2039CC;
+    border: 0px;
+
+}
+
+/* --------  PROJETO  -------- */
+
+.projeto{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f7f7f7;
+
+    flex-wrap: wrap;
+}
+
+.video{
+    flex: 50%;
+    padding: 0px 50px;
+}
+
+.video iframe{
+    width: 100%;
+}
+
+.sobre-projeto{
+    flex: 50%;
+    padding: 0px 50px;
+}
+
+.sobre-projeto h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.sobre-projeto p{
+    text-align: justify;
+}
+
+/* -------- SELEÇÃO -------- */
+.t-selecao{
+    text-align: center;
+}
+
+.selecao{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px 0px;
+
+    flex-wrap: wrap; /*Responsividade*/
+}
+
+.card{
+    flex: 25%;
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+.img-selecao{
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    margin: 0 auto;
+
+    border-radius: 50%;
+}
+
+.img-selecao img{
+    max-width: 60%;
+    margin: 15px;
+}
+
+.img-selecao:hover{
+    background-color: lightblue;
+
+}
+
+/* --------  ECOPONTOS  -------- */
+.ecopontos{
+    max-width: 100%;
+    background-color: #f7f7f7;
+    padding: 30px 0 20px 0;
+}
+
+.ecopontos h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ecopontos h2{
+    text-align: center;
+    font-size: 16px;
+}
+
+.container-cards{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+
+    flex-wrap: wrap; /*Responsividade*/
+
+
+}
+
+.card-ecopontos{
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 2px 7px 8px #777777;
+
+    flex: 30%;
+}
+
+.card-ecopontos img{
+    max-width: 100%;
+    height: 300px;
+}
+
+
+
+/* --------  ACORDOS  -------- */
+.acordo{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+
+    background-color: #f7f7f7;
+
+    flex-wrap: wrap;
+}
+
+.coluna{
+    flex: 50%;
+    padding: 0px 40px;
+}
+
+.coluna img{
+    max-width: 100%;
+}
+
+.coluna h1{
+    text-align:center;
+    font-size: 30px;
+}
+
+.coluna h4{
+    text-align: center;
+}
+
+.coluna p{
+    text-align: justify;
+    line-height: 1.6;
+
+}
+
+/* -------- Rodapé  -------- */
+
+footer{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+    background-color: #595959;
+    color: #ffffff;
+}
+
+/*---------RESPONSIVIDADE--------*/
+
+@media (max-width: 750px){
+
+    /* HEADER RESPONSIVO*/
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .capa h1{
+        flex-direction: column;
+        text-align: center;
+        font-size: 40px;
+        border-bottom: none;
+    }
+
+    .capa h2{
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .menu-nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-nav a{
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .menu-nav{
+        display: none;
+    }
+
+    .projeto{
+        flex-direction: column;
+    }
+
+    .video{
+        flex: 100%;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .sobre-projeto{
+        padding: 20px;
+    }
+
+    /* SELEÇÃO RESPONSIVO*/
+
+    .selecao{
+        flex-direction: column;
+    }
+
+    /* ECOPONTOS RESPONSIVO*/
+
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Sobre mim RESPONSIVO*/
+
+    .acordo{ 
+    flex-direction: column;
+    }
+
+    /*Rodapé RESPONSIVO*/
+
+    footer{
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
